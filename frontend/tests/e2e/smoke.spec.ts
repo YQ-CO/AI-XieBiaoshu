@@ -70,8 +70,8 @@ test('uploads a bid file and shows parsed sections', async ({ page }: { page: an
   await page.getByRole('button', { name: '开始解析' }).click();
   await expect(page.getByRole('heading', { name: '解析结果' })).toBeVisible();
   await expect(page.getByText(/文件名：.*bid-e2e\.txt/)).toBeVisible();
-  await expect(page.getByText('基本信息')).toBeVisible();
-  await expect(page.getByText('资格要求')).toBeVisible();
+  await expect(page.getByText('基本信息', { exact: true })).toBeVisible();
+  await expect(page.getByText('资格要求', { exact: true })).toBeVisible();
 });
 
 test('creates a document then verifies edit entry in my documents', async ({ page }: { page: any }) => {
