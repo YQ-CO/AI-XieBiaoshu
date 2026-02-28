@@ -1,0 +1,130 @@
+[
+  {
+    "id": "mm4dlq0xhatcy9",
+    "name": "TestCo",
+    "creditCode": "123",
+    "mobile": "",
+    "inviteCode": "M5FHSW",
+    "members": [
+      "15900000000"
+    ],
+    "createdAt": "2026-02-27T04:12:14.721Z",
+    "ownerId": "15900000000",
+    "memberRoles": {
+      "15900000000": "owner"
+    }
+  },
+  {
+    "id": "mm4hcxv2gy1c8c",
+    "name": "世界",
+    "creditCode": "911101083161589964Q",
+    "mobile": "",
+    "inviteCode": "UR1A8G",
+    "members": [
+      "18612586648"
+    ],
+    "createdAt": "2026-02-27T05:57:23.438Z",
+    "ownerId": "18612586648",
+    "memberRoles": {
+      "18612586648": "owner"
+    }
+  },
+  {
+    "id": "mm51zxg3amox6y",
+    "name": "角色联调企业",
+    "creditCode": "",
+    "mobile": "",
+    "inviteCode": "J7C0J3",
+    "members": [
+      "18800000001",
+      "18800000002"
+    ],
+    "ownerId": "18800000001",
+    "memberRoles": {
+      "18800000001": "owner",
+      "18800000002": "admin"
+    },
+    "createdAt": "2026-02-27T15:35:08.307Z"
+  },
+  {
+    "id": "mm52hl3zmvtnje",
+    "name": "范围企业A",
+    "creditCode": "",
+    "mobile": "",
+    "inviteCode": "3Q2NGJ",
+    "members": [
+      "19900000001",
+      "19900000002"
+    ],
+    "ownerId": "19900000001",
+    "memberRoles": {
+      "19900000001": "owner",
+      "19900000002": "admin"
+    },
+    "createdAt": "2026-02-27T15:48:52.127Z"
+  },
+  {
+    "id": "mm52rxzj443ukb",
+    "name": "企业范围联调B",
+    "creditCode": "",
+    "mobile": "",
+    "inviteCode": "QCN1UP",
+    "members": [
+      "16600000001",
+      "16600000002"
+    ],
+    "ownerId": "16600000001",
+    "memberRoles": {
+      "16600000001": "owner",
+      "16600000002": "admin"
+    },
+    "createdAt": "2026-02-27T15:56:55.375Z"
+  },
+  {
+    "id": "mm52zkrclz2eh1",
+    "name": "权限收口企业",
+    "creditCode": "",
+    "mobile": "",
+    "inviteCode": "6CI1Z4",
+    "members": [
+      "15500000001",
+      "15500000002"
+    ],
+    "ownerId": "15500000001",
+    "memberRoles": {
+      "15500000001": "owner",
+      "15500000002": "admin"
+    },
+    "createdAt": "2026-02-27T16:02:51.480Z"
+  },
+  {
+    "id": "mm5o9mxt47ol90",
+    "name": "企业A_1772243912",
+    "creditCode": "CC1772243912A",
+    "mobile": "",
+    "inviteCode": "6N7P3I",
+    "members": [
+      "ent_owner_A_1772243912"
+    ],
+    "ownerId": "ent_owner_A_1772243912",
+    "memberRoles": {
+      "ent_owner_A_1772243912": "owner"
+    },
+    "createdAt": "2026-02-28T01:58:32.801Z"
+  },
+  {
+    "id": "mm5o9mxxprlfso",
+    "name": "企业B_1772243912",
+    "creditCode": "CC1772243912B",
+    "mobile": "",
+    "inviteCode": "6WTGFQ",
+    "members": [
+      "ent_owner_B_1772243912"
+    ],
+    "ownerId": "ent_owner_B_1772243912",
+    "memberRoles": {
+      "ent_owner_B_1772243912": "owner"
+    },
+    "createdAt": "2026-02-28T01:58:32.805Z"
+  }
+]

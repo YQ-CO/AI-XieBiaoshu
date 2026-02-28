@@ -1,0 +1,90 @@
+[
+  {
+    "id": "mm4njx3s9futs5",
+    "userId": "15900000000",
+    "name": "联调文档",
+    "type": "scoring",
+    "status": "draft",
+    "createdAt": "2026-02-27T08:50:46.744Z",
+    "updatedAt": "2026-02-27T08:50:46.744Z"
+  },
+  {
+    "id": "mm4offue24iksg",
+    "userId": "15900000000",
+    "name": "提交联调文档",
+    "type": "special",
+    "status": "submitted",
+    "createdAt": "2026-02-27T09:15:17.366Z",
+    "updatedAt": "2026-02-27T09:15:17.374Z",
+    "submittedAt": "2026-02-27T09:15:17.374Z"
+  },
+  {
+    "id": "mm51zxh0kpu52o",
+    "userId": "18800000002",
+    "enterpriseId": "mm51zxg3amox6y",
+    "name": "企业文档",
+    "type": "special",
+    "status": "draft",
+    "createdAt": "2026-02-27T15:35:08.340Z",
+    "updatedAt": "2026-02-27T15:35:08.340Z"
+  },
+  {
+    "id": "mm5284xu38n6p9",
+    "userId": "17700000000",
+    "name": "审核文档",
+    "type": "scoring",
+    "status": "completed",
+    "createdAt": "2026-02-27T15:41:31.266Z",
+    "updatedAt": "2026-02-27T15:41:31.287Z",
+    "reviewStatus": "approved",
+    "submittedAt": "2026-02-27T15:41:31.274Z",
+    "reviewedAt": "2026-02-27T15:41:31.287Z",
+    "reviewedBy": "admin",
+    "reviewComment": ""
+  },
+  {
+    "id": "mm52ry0am9hill",
+    "userId": "16600000002",
+    "enterpriseId": "mm52rxzj443ukb",
+    "name": "范围文档",
+    "type": "special",
+    "status": "submitted",
+    "createdAt": "2026-02-27T15:56:55.402Z",
+    "updatedAt": "2026-02-27T15:56:55.411Z",
+    "reviewStatus": "pending",
+    "submittedAt": "2026-02-27T15:56:55.411Z"
+  },
+  {
+    "id": "mm52zks7e2kjmv",
+    "userId": "15500000002",
+    "enterpriseId": "mm52zkrclz2eh1",
+    "name": "锁定测试文档",
+    "type": "scoring",
+    "status": "submitted",
+    "createdAt": "2026-02-27T16:02:51.511Z",
+    "updatedAt": "2026-02-27T16:02:51.521Z",
+    "reviewStatus": "pending",
+    "submittedAt": "2026-02-27T16:02:51.521Z"
+  },
+  {
+    "id": "mm53onh15wn64t",
+    "userId": "13300000001",
+    "name": "回滚验证文档",
+    "type": "scoring",
+    "status": "submitted",
+    "createdAt": "2026-02-27T16:22:21.397Z",
+    "updatedAt": "2026-02-27T16:22:21.413Z",
+    "submittedAt": "2026-02-27T16:22:21.405Z",
+    "content": "rollback update"
+  },
+  {
+    "id": "mm5t3w5h8t3xe3",
+    "userId": "export_user",
+    "name": "导出测试文档",
+    "type": "scoring",
+    "status": "draft",
+    "createdAt": "2026-02-28T04:14:02.885Z",
+    "updatedAt": "2026-02-28T04:14:02.888Z",
+    "content": "第一行\n第二行\n第三行"
+  }
+]

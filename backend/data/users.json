@@ -1,0 +1,26 @@
+[
+  {
+    "id": "rbac_user_1",
+    "disabled": false,
+    "createdAt": "2026-02-28T03:31:28.164Z",
+    "lastLoginAt": "2026-02-28T03:31:28.185Z"
+  },
+  {
+    "id": "metric_user",
+    "disabled": false,
+    "createdAt": "2026-02-28T03:55:30.505Z",
+    "lastLoginAt": "2026-02-28T03:55:30.508Z"
+  },
+  {
+    "id": "task_user",
+    "disabled": false,
+    "createdAt": "2026-02-28T04:05:47.608Z",
+    "lastLoginAt": "2026-02-28T04:05:47.612Z"
+  },
+  {
+    "id": "export_user",
+    "disabled": false,
+    "createdAt": "2026-02-28T04:14:02.874Z",
+    "lastLoginAt": "2026-02-28T04:14:02.877Z"
+  }
+]

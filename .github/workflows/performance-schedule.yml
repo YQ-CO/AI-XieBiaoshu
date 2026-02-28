@@ -1,0 +1,175 @@
+name: Performance Schedule
+
+on:
+  schedule:
+    - cron: '0 17 * * *'
+    - cron: '0 18 * * 0'
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: 'Run profile'
+        required: true
+        default: both
+        type: choice
+        options:
+          - nightly
+          - weekly
+          - both
+      nightly_vus:
+        description: 'Nightly VUs (manual dispatch only)'
+        required: false
+        default: '5'
+      nightly_duration:
+        description: 'Nightly duration (e.g. 10m)'
+        required: false
+        default: '10m'
+      weekly_vus:
+        description: 'Weekly VUs (manual dispatch only)'
+        required: false
+        default: '10'
+      weekly_duration:
+        description: 'Weekly duration (e.g. 15m)'
+        required: false
+        default: '15m'
+
+permissions:
+  contents: read
+
+jobs:
+  k6-nightly-light:
+    name: k6 Nightly Light Pressure
+    runs-on: ubuntu-latest
+    if: |
+      (github.event_name == 'schedule' && github.event.schedule == '0 17 * * *') ||
+      (github.event_name == 'workflow_dispatch' && (inputs.profile == 'nightly' || inputs.profile == 'both'))
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Install backend dependencies
+        run: cd backend && npm install --no-audit --no-fund
+
+      - name: Build backend
+        run: cd backend && npm run build
+
+      - name: Start backend server
+        run: |
+          cd backend
+          node dist/index.js > /tmp/backend-perf-nightly.log 2>&1 &
+          echo $! > /tmp/backend-perf-nightly.pid
+
+      - name: Wait for backend readiness
+        run: |
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:3000/ > /dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "backend did not become ready in time"
+          exit 1
+
+      - name: Setup k6
+        uses: grafana/setup-k6-action@v1
+
+      - name: Run nightly light pressure
+        env:
+          BASE_URL: http://127.0.0.1:3000
+          K6_VUS: ${{ inputs.nightly_vus || '5' }}
+          K6_DURATION: ${{ inputs.nightly_duration || '10m' }}
+        run: k6 run backend/perf/k6-baseline.js
+
+      - name: Upload nightly performance artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: performance-k6-nightly
+          path: |
+            backend/perf/k6-summary.json
+            /tmp/backend-perf-nightly.log
+          retention-days: 90
+          if-no-files-found: ignore
+
+      - name: Stop backend server
+        if: always()
+        run: |
+          if [ -f /tmp/backend-perf-nightly.pid ]; then
+            kill "$(cat /tmp/backend-perf-nightly.pid)" || true
+          fi
+
+  k6-weekly-baseline:
+    name: k6 Weekly Baseline
+    runs-on: ubuntu-latest
+    if: |
+      (github.event_name == 'schedule' && github.event.schedule == '0 18 * * 0') ||
+      (github.event_name == 'workflow_dispatch' && (inputs.profile == 'weekly' || inputs.profile == 'both'))
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Install backend dependencies
+        run: cd backend && npm install --no-audit --no-fund
+
+      - name: Build backend
+        run: cd backend && npm run build
+
+      - name: Start backend server
+        run: |
+          cd backend
+          node dist/index.js > /tmp/backend-perf-weekly.log 2>&1 &
+          echo $! > /tmp/backend-perf-weekly.pid
+
+      - name: Wait for backend readiness
+        run: |
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:3000/ > /dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          echo "backend did not become ready in time"
+          exit 1
+
+      - name: Setup k6
+        uses: grafana/setup-k6-action@v1
+
+      - name: Run weekly baseline pressure
+        env:
+          BASE_URL: http://127.0.0.1:3000
+          K6_VUS: ${{ inputs.weekly_vus || '10' }}
+          K6_DURATION: ${{ inputs.weekly_duration || '15m' }}
+        run: k6 run backend/perf/k6-baseline.js
+
+      - name: Upload weekly performance artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: performance-k6-weekly
+          path: |
+            backend/perf/k6-summary.json
+            /tmp/backend-perf-weekly.log
+          retention-days: 90
+          if-no-files-found: ignore
+
+      - name: Stop backend server
+        if: always()
+        run: |
+          if [ -f /tmp/backend-perf-weekly.pid ]; then
+            kill "$(cat /tmp/backend-perf-weekly.pid)" || true
+          fi

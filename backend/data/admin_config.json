@@ -1,0 +1,14 @@
+{
+  "model": {
+    "mode": "openai_compatible",
+    "provider": "deepseek_compatible",
+    "baseURL": "https://api.deepseek.com/v1",
+    "model": "deepseek-chat",
+    "apiName": "写标书",
+    "systemPrompt": "你是一个专业的中文标书编写助手。",
+    "temperature": 0.7,
+    "maxTokens": 800,
+    "timeoutMs": 30000,
+    "maxPromptLength": 4000
+  }
+}

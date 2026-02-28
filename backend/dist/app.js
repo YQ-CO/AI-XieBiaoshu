@@ -1,0 +1,28 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const cors_1 = __importDefault(require("cors"));
+const auth_1 = __importDefault(require("./routes/auth"));
+const users_1 = __importDefault(require("./routes/users"));
+const enterprise_1 = __importDefault(require("./routes/enterprise"));
+const orders_1 = __importDefault(require("./routes/orders"));
+const parse_1 = __importDefault(require("./routes/parse"));
+const documents_1 = __importDefault(require("./routes/documents"));
+const model_1 = __importDefault(require("./routes/model"));
+const admin_1 = __importDefault(require("./routes/admin"));
+const app = (0, express_1.default)();
+app.use((0, cors_1.default)());
+app.use(express_1.default.json());
+app.use('/auth', auth_1.default);
+app.use('/users', users_1.default);
+app.use('/enterprise', enterprise_1.default);
+app.use('/orders', orders_1.default);
+app.use('/parse', parse_1.default);
+app.use('/documents', documents_1.default);
+app.use('/model', model_1.default);
+app.use('/admin', admin_1.default);
+app.get('/', (req, res) => res.json({ status: 'ok', service: 'bid-platform-backend' }));
+exports.default = app;

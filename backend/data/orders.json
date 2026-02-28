@@ -1,0 +1,73 @@
+[
+  {
+    "id": "mm4hqlh2iv3y9e",
+    "userId": "15900000000",
+    "amount": 88,
+    "createdAt": "2026-02-27T06:08:00.566Z",
+    "invoiceRequested": true,
+    "invoiceType": "normal",
+    "invoiceInfo": {
+      "company": "A Corp",
+      "code": "123"
+    },
+    "invoiceStatus": "pending"
+  },
+  {
+    "id": "mm4kno2lh9ix6w",
+    "userId": "18612586648",
+    "amount": 100,
+    "createdAt": "2026-02-27T07:29:42.813Z",
+    "invoiceRequested": false
+  },
+  {
+    "id": "mm51pjogmeuh9c",
+    "userId": "15900000000",
+    "amount": 99,
+    "createdAt": "2026-02-27T15:27:03.904Z",
+    "invoiceRequested": true,
+    "invoiceType": "normal",
+    "invoiceInfo": {
+      "title": "测试抬头"
+    },
+    "invoiceStatus": "approved"
+  },
+  {
+    "id": "mm52hl4ncxg0bx",
+    "userId": "19900000002",
+    "enterpriseId": "mm52hl3zmvtnje",
+    "amount": 55,
+    "createdAt": "2026-02-27T15:48:52.151Z",
+    "invoiceRequested": true,
+    "invoiceType": "normal",
+    "invoiceInfo": {},
+    "invoiceStatus": "approved"
+  },
+  {
+    "id": "mm5o9my0iaspl3",
+    "userId": "ent_owner_A_1772243912",
+    "enterpriseId": "mm5o9mxt47ol90",
+    "amount": 101,
+    "createdAt": "2026-02-28T01:58:32.808Z",
+    "invoiceRequested": true,
+    "invoiceType": "normal",
+    "invoiceInfo": {
+      "company": "企业A",
+      "code": "A1"
+    },
+    "invoiceStatus": "approved"
+  },
+  {
+    "id": "mm5o9my29nlwpa",
+    "userId": "ent_owner_B_1772243912",
+    "enterpriseId": "mm5o9mxxprlfso",
+    "amount": 202,
+    "createdAt": "2026-02-28T01:58:32.810Z",
+    "invoiceRequested": true,
+    "invoiceType": "special",
+    "invoiceInfo": {
+      "company": "企业B",
+      "code": "B1"
+    },
+    "invoiceStatus": "approved"
+  }
+]

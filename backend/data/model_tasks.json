@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mm5sta0312u2do",
+    "userId": "task_user",
+    "docId": "task-doc-1",
+    "promptLength": 6,
+    "status": "failed",
+    "createdAt": "2026-02-28T04:05:47.619Z",
+    "updatedAt": "2026-02-28T04:05:47.623Z",
+    "startedAt": "2026-02-28T04:05:47.620Z",
+    "error": "missing apiKey",
+    "errorCode": "MODEL_CONFIG_ERROR",
+    "statusCode": 500,
+    "finishedAt": "2026-02-28T04:05:47.623Z"
+  }
+]

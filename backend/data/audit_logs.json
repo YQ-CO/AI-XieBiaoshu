@@ -1,0 +1,883 @@
+[
+  {
+    "id": "mm54ftlk77r8yk",
+    "createdAt": "2026-02-27T16:43:29.048Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "audit_user",
+    "targetId": "doc-audit-1",
+    "message": "empty model response",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 10
+    },
+    "userAgent": "curl/7.61.1"
+  },
+  {
+    "id": "mm54j2hnqlhrtg",
+    "createdAt": "2026-02-27T16:46:00.539Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "audit_user",
+    "targetId": "doc-audit-1",
+    "message": "empty model response",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 10
+    },
+    "userAgent": "curl/7.61.1"
+  },
+  {
+    "id": "mm54jrzqp3gv2l",
+    "createdAt": "2026-02-27T16:46:33.590Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "audit_user",
+    "targetId": "doc-audit-1",
+    "message": "empty model response",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 10
+    },
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm54nvchfheah4",
+    "createdAt": "2026-02-27T16:49:44.561Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "audit_user",
+    "targetId": "doc-audit-1",
+    "message": "empty model response",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 10
+    },
+    "userAgent": "curl/7.61.1"
+  },
+  {
+    "id": "mm54p5dndkzewk",
+    "createdAt": "2026-02-27T16:50:44.219Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "audit_user",
+    "targetId": "doc-audit-1",
+    "message": "empty model response",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 10
+    },
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm54p7cmwqtdw0",
+    "createdAt": "2026-02-27T16:50:46.774Z",
+    "category": "admin",
+    "action": "admin.config.update",
+    "success": true,
+    "actorType": "platform_admin",
+    "actorId": "platform",
+    "metadata": {
+      "keys": [
+        "model"
+      ]
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "curl/7.61.1"
+  },
+  {
+    "id": "mm54ptrqyuqz31",
+    "createdAt": "2026-02-27T16:51:15.830Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": true,
+    "actorType": "user",
+    "actorId": "audit_user",
+    "targetId": "doc-audit-1",
+    "metadata": {
+      "mode": "mock",
+      "apiName": "写标书",
+      "promptLength": 10
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "curl/7.61.1"
+  },
+  {
+    "id": "mm5o9myelja5iy",
+    "createdAt": "2026-02-28T01:58:32.822Z",
+    "category": "admin",
+    "action": "orders.invoice.review",
+    "success": false,
+    "actorType": "platform_admin",
+    "actorId": "platform",
+    "targetId": "mm5o9my0iaspl3",
+    "message": "only special invoice requires review",
+    "metadata": {
+      "status": "approved",
+      "invoiceType": "normal"
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5o9mygpuuxcg",
+    "createdAt": "2026-02-28T01:58:32.824Z",
+    "category": "admin",
+    "action": "orders.invoice.review",
+    "success": true,
+    "actorType": "platform_admin",
+    "actorId": "platform",
+    "targetId": "mm5o9my29nlwpa",
+    "metadata": {
+      "status": "approved",
+      "invoiceType": "special"
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5oy5dvoaaws5",
+    "createdAt": "2026-02-28T02:17:36.451Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "model_option_user",
+    "targetId": "doc-opt-1",
+    "message": "invalid modelChoice",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 6,
+      "modelChoice": "default"
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5p02wkz1znao",
+    "createdAt": "2026-02-28T02:19:06.548Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "model_option_user",
+    "targetId": "doc-opt-1",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 6,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5p0kvj9zp8x2",
+    "createdAt": "2026-02-28T02:19:29.839Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "model_option_user2",
+    "targetId": "d1",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5p19j94dxqgg",
+    "createdAt": "2026-02-28T02:20:01.797Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "model_option_user3",
+    "targetId": "d1",
+    "message": "invalid modelChoice",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": "__hack__"
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5p19jei8ruy0",
+    "createdAt": "2026-02-28T02:20:01.802Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "model_option_user3",
+    "targetId": "d1",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": "default"
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r5642v6in8x",
+    "createdAt": "2026-02-28T03:19:03.219Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r56452yqrk4",
+    "createdAt": "2026-02-28T03:19:03.221Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r564864zr0b",
+    "createdAt": "2026-02-28T03:19:03.224Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r564aego7cm",
+    "createdAt": "2026-02-28T03:19:03.226Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r564cpbf91r",
+    "createdAt": "2026-02-28T03:19:03.228Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r564fxs1eqv",
+    "createdAt": "2026-02-28T03:19:03.231Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r564iukwrr6",
+    "createdAt": "2026-02-28T03:19:03.234Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r564k87kr9m",
+    "createdAt": "2026-02-28T03:19:03.236Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r564m2rik1w",
+    "createdAt": "2026-02-28T03:19:03.238Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r564oo4qf5k",
+    "createdAt": "2026-02-28T03:19:03.240Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r564repbsp2",
+    "createdAt": "2026-02-28T03:19:03.243Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r564tmdeurl",
+    "createdAt": "2026-02-28T03:19:03.245Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r564w5iuvfs",
+    "createdAt": "2026-02-28T03:19:03.248Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r564y9rpqic",
+    "createdAt": "2026-02-28T03:19:03.250Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r565008w9ok",
+    "createdAt": "2026-02-28T03:19:03.252Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r5652ijo1pd",
+    "createdAt": "2026-02-28T03:19:03.254Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r56544cl5m0",
+    "createdAt": "2026-02-28T03:19:03.256Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r5657h0xlx5",
+    "createdAt": "2026-02-28T03:19:03.259Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r5659qdyj5k",
+    "createdAt": "2026-02-28T03:19:03.261Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r565b99t78r",
+    "createdAt": "2026-02-28T03:19:03.263Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r565dwk4cy2",
+    "createdAt": "2026-02-28T03:19:03.265Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r565gr72170",
+    "createdAt": "2026-02-28T03:19:03.268Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r565ilux8m6",
+    "createdAt": "2026-02-28T03:19:03.270Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r565kur0ogm",
+    "createdAt": "2026-02-28T03:19:03.272Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r565mhyttc3",
+    "createdAt": "2026-02-28T03:19:03.274Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r565po5rjz0",
+    "createdAt": "2026-02-28T03:19:03.277Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r565rs3f6u8",
+    "createdAt": "2026-02-28T03:19:03.279Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r565uf4tm6s",
+    "createdAt": "2026-02-28T03:19:03.282Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r565w11jh7i",
+    "createdAt": "2026-02-28T03:19:03.284Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5r565yxu6qdp",
+    "createdAt": "2026-02-28T03:19:03.286Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "rate_model_user",
+    "targetId": "d-rate",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 1,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5rl4xa4bptc5",
+    "createdAt": "2026-02-28T03:31:28.174Z",
+    "category": "admin",
+    "action": "users.disable",
+    "success": true,
+    "actorType": "platform_admin",
+    "actorId": "platform",
+    "targetId": "rbac_user_1",
+    "metadata": {
+      "reason": "risk-test"
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5rl4xib2ht08",
+    "createdAt": "2026-02-28T03:31:28.182Z",
+    "category": "admin",
+    "action": "users.enable",
+    "success": true,
+    "actorType": "platform_admin",
+    "actorId": "platform",
+    "targetId": "rbac_user_1",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5sg1ud02ppm3",
+    "createdAt": "2026-02-28T03:55:30.517Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "metric_user",
+    "targetId": "metric-doc",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 4,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  },
+  {
+    "id": "mm5sta061dq3wt",
+    "createdAt": "2026-02-28T04:05:47.622Z",
+    "category": "model",
+    "action": "model.generate",
+    "success": false,
+    "actorType": "user",
+    "actorId": "task_user",
+    "targetId": "task-doc-1",
+    "message": "missing apiKey",
+    "metadata": {
+      "mode": "openai_compatible",
+      "apiName": "写标书",
+      "promptLength": 6,
+      "modelChoice": ""
+    },
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Python-urllib/3.6"
+  }
+]
